@@ -3,13 +3,20 @@
  */
 package uni1a;
 
+import NuevasClases.Temporada;
+
+import java.util.ArrayList;
+
 // Subclase SerieDeTV que extiende de ContenidoAudiovisual
 public class SerieDeTV extends ContenidoAudiovisual {
     private int temporadas;
+    private ArrayList<Temporada> Temporadas;
 
-    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas) {
+    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas,
+                     ArrayList<Temporada> listaTemporada) {
         super(titulo, duracionEnMinutos, genero);
         this.temporadas = temporadas;
+        this.Temporadas = listaTemporada;
     }
 
     public int getTemporadas() {
@@ -18,6 +25,10 @@ public class SerieDeTV extends ContenidoAudiovisual {
 
     public void setTemporadas(int temporadas) {
         this.temporadas = temporadas;
+    }
+    public void AgregarTemporada(Temporada temp)
+    {
+        Temporadas.add(temp);
     }
     
     @Override
@@ -28,6 +39,10 @@ public class SerieDeTV extends ContenidoAudiovisual {
         System.out.println("Duración en minutos: " + getDuracionEnMinutos());
         System.out.println("Género: " + getGenero());
         System.out.println("Temporadas: " + this.temporadas);
+        for (Temporada temp: Temporadas)
+        {
+            System.out.println("-" + temp);
+        }
         System.out.println();
     }
 }
