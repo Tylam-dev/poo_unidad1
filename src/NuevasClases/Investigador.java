@@ -3,12 +3,12 @@ package NuevasClases;
 public class Investigador {
     private String nombre;
     private String campoEstudio;
-    private int añosExperiencia;
+    private int aniosExperiencia;
 
-    public Investigador(String nombre, String campoEstudio, int añosExperiencia) {
+    public Investigador(String nombre, String campoEstudio, int aniosExperiencia) {
         this.nombre = nombre;
         this.campoEstudio = campoEstudio;
-        this.añosExperiencia = añosExperiencia;
+        this.aniosExperiencia = aniosExperiencia;
     }
 
     public String getNombre() {
@@ -27,12 +27,12 @@ public class Investigador {
         this.campoEstudio = campoEstudio;
     }
 
-    public int getAñosExperiencia() {
-        return añosExperiencia;
+    public int getAniosExperiencia() {
+        return aniosExperiencia;
     }
 
-    public void setAñosExperiencia(int añosExperiencia) {
-        this.añosExperiencia = añosExperiencia;
+    public void setAniosExperiencia(int aniosExperiencia) {
+        this.aniosExperiencia = aniosExperiencia;
     }
 
     public void investigar() {

@@ -1,9 +1,10 @@
 package NuevasClases;
+import java.util.ArrayList;
 
 public class Temporada {
     private int numero;
     private int episodios;
-    private List<String> titulosEpisodios;
+    private ArrayList<String> titulosEpisodios;
 
     public Temporada(int numero, int episodios) {
         this.numero = numero;
@@ -31,7 +32,7 @@ public class Temporada {
         titulosEpisodios.add(titulo);
     }
 
-    public List<String> getTitulosEpisodios() {
+    public ArrayList<String> getTitulosEpisodios() {
         return titulosEpisodios;
     }
 }
