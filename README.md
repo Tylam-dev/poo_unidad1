@@ -14,5 +14,21 @@
 2. Copiar la URL HTTPS
 3. Dirigirse a la terminal y ubicarse en la carpeta donde se guardara el proyecto
 4. ejecutar el comnado git clone <urlCopiada>
-5. Abrir el IDE de preferencia para y ejecutar el proyecto.
-
+5. Abrir el IDE de preferencia para y ejecutar el archivo PruebaAudioVisual.java
+## Estructura de carpeta
+├── .idea
+├── out
+├── src
+    ├── NuevasClases
+    │   ├── Actor.java
+    │   ├── Investigador.java
+    │   └── Temporada.java
+    ├── poo
+    │   └── PruebaAudioVisual.java
+    └── uni1a
+    ├── ContenidoAudioVisual.java
+    ├── Documental.java
+    ├── Pelicula.java
+    ├── SerieDeTV.java
+    ├── Stream.java
+    └── Tiktok.java
