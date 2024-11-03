@@ -12,11 +12,10 @@ public class SerieDeTV extends ContenidoAudiovisual {
     private int temporadas;
     private ArrayList<Temporada> Temporadas;
 
-    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas,
-                     ArrayList<Temporada> listaTemporada) {
+    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas) {
         super(titulo, duracionEnMinutos, genero);
         this.temporadas = temporadas;
-        this.Temporadas = listaTemporada;
+        this.Temporadas = new ArrayList<>();
     }
 
     public int getTemporadas() {
