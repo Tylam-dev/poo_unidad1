@@ -13,7 +13,7 @@ public class Stream extends ContenidoAudiovisual{
         super(titulo, duracionEnMinutos, genero);
         this.plataforma = plataforma;
         this.espectadores = espectadores;
-        this.Temporadas = new ArrayList<>();
+        this.temporadas = new ArrayList<>();
     }
     public String getPlataforma() {
         return plataforma;
