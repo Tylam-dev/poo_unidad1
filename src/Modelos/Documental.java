@@ -1,17 +1,14 @@
 /**
  * Class Documental
  */
-package uni1a;
-
-import NuevasClases.Investigador;
+package Modelos;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 // Subclase Documental que extiende de ContenidoAudiovisual
 public class Documental extends ContenidoAudiovisual {
     private String tema;
-    private ArrayList<Investigador> Investigadores;
+    private ArrayList<Investigador> Investigadores = new ArrayList<Investigador>();
 
     public Documental(String titulo, int duracionEnMinutos, String genero, String tema) {
         super(titulo, duracionEnMinutos, genero);
@@ -44,5 +41,9 @@ public class Documental extends ContenidoAudiovisual {
         System.out.println("Tema: " + this.tema);
         System.out.println(inv);
         System.out.println();
+    }
+    @Override
+    public void imprimirPropiedades(){
+
     }
 }

@@ -1,4 +1,4 @@
-package NuevasClases;
+package Modelos;
 
 public class Investigador {
     private String nombre;

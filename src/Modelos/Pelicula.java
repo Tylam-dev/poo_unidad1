@@ -1,40 +1,50 @@
-package uni1a;
-
-import NuevasClases.Actor;
+/**
+ * Class Pelicula
+ */
+package Modelos;
 
 import java.util.ArrayList;
 
-public class TikTok extends ContenidoAudiovisual{ // Duración en segundos
-    private int numLikes;
+// Subclase Pelicula que extiende de ContenidoAudiovisual
+public class Pelicula extends ContenidoAudiovisual {
+    private String estudio;
     private ArrayList<Actor> Actores;
-    public TikTok(int duracionEnMinutos, String titulo, String genero, int numLikes) {
+
+    public Pelicula(String titulo, int duracionEnMinutos, String genero, String estudio) {
         super(titulo, duracionEnMinutos, genero);
-        this.numLikes = numLikes;
+        this.estudio = estudio;
+        this.Actores = new ArrayList<Actor>();
     }
 
-    public int getNumLikes() {
-        return numLikes;
+    public String getEstudio() {
+        return estudio;
     }
 
-    public void setNumLikes(int numLikes) {
-        this.numLikes = numLikes;
+    public void setEstudio(String estudio) {
+        this.estudio = estudio;
     }
+
     public void AgregarActor(Actor actor) {
         Actores.add(actor);
     }
+
     @Override
     public void mostrarDetalles() {
         String nombresActores = "Actores: ";
         for(Actor ac : Actores){
             nombresActores = nombresActores + ac.getNombre();
         }
-        System.out.println("Detalles del Tiktok:");
+        System.out.println("Detalles de la película:");
         System.out.println("ID: " + getId());
         System.out.println("Título: " + getTitulo());
         System.out.println("Duración en minutos: " + getDuracionEnMinutos());
         System.out.println("Género: " + getGenero());
-        System.out.println("Likes: " + numLikes);
+        System.out.println("Estudio: " + estudio);
         System.out.println(nombresActores);
         System.out.println();
+    }
+    @Override
+    public void imprimirPropiedades(){
+
     }
 }

@@ -1,4 +1,4 @@
-package uni1a;
+package Modelos;
 
 public abstract class ContenidoAudiovisual {
     private static int contar = 0;
@@ -47,4 +47,5 @@ public abstract class ContenidoAudiovisual {
     }
     
     public abstract void mostrarDetalles();
+    public abstract void imprimirPropiedades();
 }
