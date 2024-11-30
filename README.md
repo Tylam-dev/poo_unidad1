@@ -1,4 +1,4 @@
-#  Tarea 1 Unidad 2 POO
+#  Tarea 1 Unidad 4 REFACTORIZACIÓN POO
 ## Objetivos y propósitos.
 - Comprender los fundametos de POO
 - Poner en practica los fundamentos.
